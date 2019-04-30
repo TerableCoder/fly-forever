@@ -4,6 +4,7 @@ const CATEGORY_GLOBAL = 9999,
 	SKILL_FLYING_DISMOUNT = 65000001
 
 module.exports = function FlyForever(mod) {
+	mod.game.initialize(["me"]);
 	let location = null,
 		outOfEnergy = false,
 		dismountByUser = false,
